@@ -75,8 +75,7 @@ function App() {
       <header className="site-header">
         <div className="container nav-inner">
           <a className="brand" href="#top" onClick={closeMenu} aria-label="Objective Scientific home">
-            <span className="brand-mark"><Atom size={24} /></span>
-            <span className="brand-name">objective<span>scientific</span></span>
+            <img className="original-logo" src="https://www.objective-scientific.co.za/wp-content/uploads/2025/03/Logo-1.png" alt="Objective Scientific" />
           </a>
 
           <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation" aria-expanded={menuOpen}>
@@ -166,13 +165,13 @@ function App() {
 
         <section className="contact-section section-padding" id="contact">
           <div className="container contact-grid">
-            <div><p className="eyebrow"><span /> Let's work together</p><h2>Have a challenge<br /><strong>worth solving?</strong></h2><p className="muted-copy">Tell us a little about what you are working on. We'll be in touch with a thoughtful next step.</p><div className="contact-details"><a href="mailto:hello@objectivescientific.co.za"><Mail size={17} /> hello@objectivescientific.co.za</a><a href="tel:+27120072278"><Phone size={17} /> +27 12 007 2278</a><span><MapPin size={17} /> Pretoria, South Africa</span></div></div>
-            <div className="form-card">{submitted ? <div className="success-state"><CheckCircle2 size={42} /><h3>Thank you for reaching out.</h3><p>Your message is on its way. We'll be in touch soon.</p><button className="text-link" onClick={() => setSubmitted(false)}>Send another message <ArrowRight size={16} /></button></div> : <form onSubmit={handleSubmit}><div className="form-heading"><span>01</span><h3>Start a conversation</h3></div><label>Name<input required name="name" placeholder="Your name" /></label><label>Email<input required type="email" name="email" placeholder="you@company.com" /></label><label>How can we help?<textarea required name="message" rows={3} placeholder="Tell us about your project or challenge..." /></label><button className="button button-navy" type="submit">Send enquiry <ArrowRight size={17} /></button></form>}</div>
+            <div><p className="eyebrow"><span /> Let’s work together</p><h2>Have a challenge<br /><strong>worth solving?</strong></h2><p className="muted-copy">Tell us a little about what you are working on. We’ll be in touch with a thoughtful next step.</p><div className="contact-details"><a href="mailto:hello@objectivescientific.co.za"><Mail size={17} /> hello@objectivescientific.co.za</a><a href="tel:+27120072278"><Phone size={17} /> +27 12 007 2278</a><span><MapPin size={17} /> Pretoria, South Africa</span></div></div>
+            <div className="form-card">{submitted ? <div className="success-state"><CheckCircle2 size={42} /><h3>Thank you for reaching out.</h3><p>Your message is on its way. We’ll be in touch soon.</p><button className="text-link" onClick={() => setSubmitted(false)}>Send another message <ArrowRight size={16} /></button></div> : <form onSubmit={handleSubmit}><div className="form-heading"><span>01</span><h3>Start a conversation</h3></div><label>Name<input required name="name" placeholder="Your name" /></label><label>Email<input required type="email" name="email" placeholder="you@company.com" /></label><label>How can we help?<textarea required name="message" rows={3} placeholder="Tell us about your project or challenge..." /></label><button className="button button-navy" type="submit">Send enquiry <ArrowRight size={17} /></button></form>}</div>
           </div>
         </section>
       </main>
 
-      <footer className="site-footer"><div className="container footer-main"><a className="brand brand-footer" href="#top"><span className="brand-mark"><Atom size={24} /></span><span className="brand-name">objective<span>scientific</span></span></a><p>Turning specialist knowledge into meaningful progress.</p><div className="social-links"><a href="#contact" aria-label="LinkedIn"><Linkedin size={18} /></a><a href="#contact" aria-label="YouTube"><Youtube size={19} /></a><a href="mailto:hello@objectivescientific.co.za" aria-label="Email"><Mail size={18} /></a></div></div><div className="container footer-bottom"><span>© 2024 Objective Scientific. All rights reserved.</span><span>Built for better outcomes.</span></div></footer>
+      <footer className="site-footer"><div className="container footer-main"><a className="brand brand-footer" href="#top"><img className="original-logo" src="https://www.objective-scientific.co.za/wp-content/uploads/2025/03/Logo-1.png" alt="Objective Scientific" /></a><p>Turning specialist knowledge into meaningful progress.</p><div className="social-links"><a href="#contact" aria-label="LinkedIn"><Linkedin size={18} /></a><a href="#contact" aria-label="YouTube"><Youtube size={19} /></a><a href="mailto:hello@objectivescientific.co.za" aria-label="Email"><Mail size={18} /></a></div></div><div className="container footer-bottom"><span>© 2024 Objective Scientific. All rights reserved.</span><span>Built for better outcomes.</span></div></footer>
     </div>
   );
 }
